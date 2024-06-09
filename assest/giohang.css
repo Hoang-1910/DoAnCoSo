@@ -1,0 +1,88 @@
+
+.main_breadcrum{
+    display: flex;
+    margin-left: 50px;
+}
+
+.main_breadcrum a {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.main_breadcrum p {
+    padding-right: 10px;
+    margin: 0;
+}
+.main_title {
+    margin-left: 60px;
+}
+.main_content {
+    display: flex;
+    margin-left: 100px;
+}
+.tt_sanpham {
+    padding-left: 0;
+    height: 250px;
+}
+.tt_sanpham-top {
+    background-color: #f0f2f5;
+    align-items: center;
+    
+}
+.tt_sanpham-top, .tt_sanpham-bottom {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 50px;
+    grid-template-rows: 50px;
+    padding: 10px;
+}
+
+.tt_sanpham img {
+    width: 120px;
+    height: 100px;
+}
+
+.btn_ttmuasam, .btn_dathang{
+    margin-top: 20px;
+    width: 200px;
+    background: #737361;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.main_content-right {
+    margin-left: 30px;
+}
+
+.tt_mua {
+    display: grid;
+}
+
+.tt_mua input {
+    width: 400px;
+    font-size: 14px;
+    height: 45px;
+    border: none;
+    border: 1px solid #d9d9d9;
+    padding-left: 10px;
+    border-radius: 4px;
+    outline: none;
+    margin: 10px;
+}
+.tt_mua select {
+    height: 45px;
+    border: none;
+    border: 1px solid #d9d9d9;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+.btn_dathang {
+    margin-left: 100px;
+    height: 30px;
+}
