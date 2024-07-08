@@ -10,16 +10,7 @@
     <link rel="stylesheet" href="./assest/giohang.css">
     <link rel="stylesheet" href="./js/base.js">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<SCRIPT LANGUAGE = "Javascript">
-        $(document).ready(function() {
-        $("a[href*='#']:not([href='#])").click(function() {
-            let target = $(this).attr("href");
-            $('html,body').stop().animate({
-            scrollTop: $(target).offset().top
-            }, 1000);
-            event.preventDefault();
-        }); 
-    });</SCRIPT>
+	<script src="./js/base.js"></script>
 </head>
 <body>
     <div class="header">
@@ -43,7 +34,7 @@
         <div class="clear"></div>
         <ul class="menu">
             <li class="menu_nav">
-                <a href=""><i class="fa-solid fa-house"></i></a>
+                <a href="./trangchu.html"><i class="fa-solid fa-house"></i></a>
             </li>
             <li class="menu_nav">
                 <a href="/phongkhach.html">Nội thất phòng khách 

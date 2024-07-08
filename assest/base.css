@@ -28,3 +28,6 @@ ul {
 .main_bredcrum li:hover a{
     color: #1aceff;
 }
+.sticky {
+    position: fixed;
+}

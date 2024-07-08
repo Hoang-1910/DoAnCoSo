@@ -9,21 +9,11 @@
     <link rel="stylesheet" href="./assest/header.css">
     <link rel="stylesheet" href="./assest/footer.css">
     <link rel="stylesheet" href="./assest/phongkhach.css">
-    <link rel="stylesheet" href="./js/base.js">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <SCRIPT LANGUAGE = "Javascript">
-        $(document).ready(function() {
-        $("a[href*='#']:not([href='#])").click(function() {
-            let target = $(this).attr("href");
-            $('html,body').stop().animate({
-            scrollTop: $(target).offset().top
-            }, 1000);
-            event.preventDefault();
-        });
-    });</SCRIPT>
+    <script src="./js/base.js"> </script>
 </head> 
 <body>
-    <div class="header">
+    <header class="header">
         <div class="header_container">
             <div class="header_top">
                 <ul>
@@ -44,7 +34,7 @@
         <div class="clear"></div>
         <ul class="menu">
             <li class="menu_nav">
-                <a href=""><i class="fa-solid fa-house"></i></a>
+                <a href="./trangchu.html"><i class="fa-solid fa-house"></i></a>
             </li>
             <li class="menu_nav">
                 <a href="">Nội thất phòng khách 
@@ -90,7 +80,7 @@
                 <a href="./giohang.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </li>
         </ul> 
-    </div>
+    </header>
     <div class="clear"></div>
     <div class="main">
         <div class="banner">
