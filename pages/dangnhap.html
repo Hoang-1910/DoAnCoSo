@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <script src="https://kit.fontawesome.com/5e4f3dce79.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assest/dangnhap.css">
+    <link rel="stylesheet" href="../assest/base.css">
+    <link rel="stylesheet" href="../assest/header.css">
+    <link rel="shortcut icon" href="../assest/img/logo.jpg" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/base.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header_container">
+            <div class="header_top">
+                <ul>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                    <li><a href="./dangnhap.html">Đăng nhập</a></li>
+                    <li><a href="./dangky.html">Đăng ký</a></li>
+                </ul>
+            </div>
+            <div class="header_bottom">
+                <a href="" class="header_logo"></a>
+                <div class="header_search">
+                    <input type="text" class="search_input" placeholder="Nhập thông tin cần tìm">
+                    <button class="search_button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <ul class="menu">
+            <li class="menu_nav">
+                <a href="./trangchu.html"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li class="menu_nav">
+                <a href="./phongkhach.html">Nội thất phòng khách 
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="menu_navbar">
+                    <li class="border-bottom"><a href="./phongkhach.html">Sofa Cao Cấp</a></li>
+                    <li class="border-bottom"><a href="">Kệ Tivi</a></li>
+                    <li class="border-bottom"><a href="">Bàn trà</a></li>
+                    <li><a href="">Tủ trang trí</a></li>
+                </ul>
+            </li>
+            <li class="menu_nav">
+                <a href="">Nội thất phòng ngủ
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="menu_navbar">
+                        <li class="border-bottom"><a href="" >Giường ngủ</a></li>
+                        <li><a href="">Bàn trang điểm</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li class="menu_nav">
+                <a href="">Nội thất phòng bếp
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="menu_navbar">
+                        <li class="border-bottom"><a href="" >Bàn ăn</a></li>
+                        <li class="border-bottom"><a href="">Ghế ăn</a></li>
+                        <li><a href="">Tủ bếp</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li class="menu_nav">
+                <a href="">Nội thất phòng làm việc
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="menu_navbar">
+                        <li class="border-bottom"><a href="" >Bàn làm việc</a></li>
+                        <li class="border-bottom"><a href="">Ghế </a></li>
+                        <li><a href="">Kệ sách</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li class="menu_nav">
+                <a href="./giohang.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+        </ul> 
+    </header> 
+    <div class="main">
+        <div class="main_bredcrum">
+            <ul>
+                <li>
+                    <a href="" aria-label="Trang chủ">Trang chủ</a>
+                </li>
+                <li>/</li>
+                <li>
+                    <a href="" aria-label="Đăng nhập">Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+        <div class="main_content">
+            <form action="" method="post" class="form_login">
+                <h2 class="form_login_title">Đăng nhập</h2>
+                <label for="">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Nhập email" class="form_login_input">
+                <label for="">Mật khẩu:</label>
+                <input type="password" name="password" id="password" placeholder="Nhập mật khẩu" class="form_login_input">  
+                <div class="form_help">
+                    <a href="">Quên mật khẩu</a>
+                    <a href="./dangky.html">Đăng ký tài khoản</a>
+                </div>
+                <button type="submit" class="form_login_button">ĐĂNG NHẬP</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>

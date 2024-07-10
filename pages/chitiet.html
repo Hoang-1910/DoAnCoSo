@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm</title>
+    <script src="https://kit.fontawesome.com/5e4f3dce79.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assest/base.css">
+    <link rel="stylesheet" href="./assest/header.css">
+    <link rel="stylesheet" href="./assest/trangchu.css">
+    <link rel="stylesheet" href="./assest/footer.css">
+    <link rel="stylesheet" href="./js/chitiet.js">
+</head>
+<body>
+      <div class="header">
+        <div class="header_container">
+            <div class="header_top">
+                <ul>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                    <li><a href="./dangnhap.html">Đăng nhập</a></li>
+                    <li><a href="./dangky.html">Đăng ký</a></li>
+                </ul>
+            </div>
+            <div class="header_bottom">
+                <a href="./trangchu.html" class="header_logo"></a>
+                <div class="header_search">
+                    <input type="text" class="search_input" placeholder="Nhập thông tin cần tìm">
+                    <button class="search_button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <ul class="menu">
+            <li class="menu_nav">
+                <a href="./trangchu.html"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li class="menu_nav">
+                <a href="./phongkhach.html">Nội thất phòng khách 
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="menu_navbar">
+                    <li class="border-bottom"><a href="" >Sofa Cao Cấp</a></li>
+                    <li class="border-bottom"><a href="">Kệ Tivi</a></li>
+                    <li class="border-bottom"><a href="">Bàn trà</a></li>
+                    <li><a href="">Tủ trang trí</a></li>
+                </ul>
+            </li>
+            <li class="menu_nav">
+                <a href="">Nội thất phòng ngủ
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="menu_navbar">
+                        <li class="border-bottom"><a href="" >Giường ngủ</a></li>
+                        <li><a href="">Bàn trang điểm</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li class="menu_nav">
+                <a href="">Nội thất phòng bếp
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="menu_navbar">
+                        <li class="border-bottom"><a href="" >Bàn ăn</a></li>
+                        <li class="border-bottom"><a href="">Ghế ăn</a></li>
+                        <li><a href="">Tủ bếp</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li class="menu_nav">
+                <a href="">Nội thất phòng làm việc
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="menu_navbar">
+                        <li class="border-bottom"><a href="" >Bàn làm việc</a></li>
+                        <li class="border-bottom"><a href="">Ghế </a></li>
+                        <li><a href="">Kệ sách</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li class="menu_nav">
+                <a href="./giohang.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+        </ul> 
+    </div>
+    <div class="clear"></div>
+    <main>
+      <!-- item  -->
+      <div id="item">
+        <div class="item">
+          <img src="./assest/img/item1.webp" alt="" />
+          <p>GIAO HÀNG TẬN NƠI</p>
+        </div>
+        <div class="item">
+          <img src="./assest/img/icon-web-05.jpg.webp" alt="" />
+          <p>BẢO HÀNH MINH BẠCH</p>
+        </div>
+        <div class="item">
+          <img src="./assest/img/icon-web-06.jpg.webp" alt="" />
+          <p>CHẾ ĐỘ TRẢ GÓP 0%</p>
+        </div>
+      </div>
+      <!-- product for you -->
+      <section class="wrap_home">
+        <div class="title_general">
+          <div class="title_general__left left">
+            <h1 class="title_general__item">Sản phẩm dành cho bạn</h1>
+          </div>
+          <div class="title_general__right right">
+            <ul>
+              <li class="active">
+                <a href="#">Sản phẩm đã xem</a>
+              </li>
+              <li><a href="#">Sản phẩm bán chạy</a></li>
+              <li><a href="#">Thanh lý giá sốc</a></li>
+              <li><a href="#">Sản phẩm mới</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <style>
+       
+    </style>
+</head>
+<body>
+    <div class="product-detail">
+        <img id="hinhanh" src="" alt="Product Image">
+        <h1 id="name"></h1>
+        <p id="price"></p>
+        <button class="btn-hover color-1" type="submit" id="addToCartBtn">
+            <i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng
+        </button>
+    </div>
+
+    <script>
+       
+        const productImage = localStorage.getItem('productImage');
+        const productName = localStorage.getItem('productName');
+        const productPrice = localStorage.getItem('productPrice');
+
+        // Set the product details in the page
+        if (productImage && productName && productPrice) {
+            document.getElementById('hinhanh').src = productImage;
+            document.getElementById('name').textContent = productName;
+            document.getElementById('price').textContent = productPrice;
+        } else {
+            console.error('Product details not found in localStorage');
+        }
+    </script>
+
+    <div class="containe2r">
+      <h1>Giới thiệu về Nội thất</h1>
+<p>Nội thất hiện đại không chỉ là những món đồ trang trí nhà cửa mà còn là những sản phẩm đa năng với nhiều tính năng tiện ích. Với các dòng sản phẩm nội thất thông minh như ghế sofa đa năng, người dùng có thể tận hưởng không gian sống rộng rãi, thoải mái, cùng với thiết kế sang trọng và chất liệu cao cấp. Các sản phẩm này không chỉ giúp tối ưu hóa không gian mà còn mang lại phong cách và tiện nghi cho ngôi nhà của bạn.</p>
+
+<h2>Cách Sử Dụng</h2>
+<p>Nội thất thông minh rất dễ sử dụng. Người dùng có thể điều chỉnh các tính năng của sản phẩm như ghế sofa, bàn làm việc hoặc tủ kệ thông qua các nút bấm hoặc điều khiển từ xa. Sau khi lắp đặt, việc thiết lập các chức năng điều chỉnh giúp đồng bộ hóa các tiện ích và tăng cường trải nghiệm sử dụng. Các tính năng cơ bản như điều chỉnh độ cao, độ nghiêng, hoặc gấp gọn sản phẩm đều có thể truy cập nhanh chóng và dễ dàng từ các điều khiển tích hợp.</p>
+
+<h2>Cách Bảo Hành và Bảo Quản</h2>
+<p><strong>Bảo Hành:</strong> Nội thất thường đi kèm với chế độ bảo hành từ 12 đến 36 tháng tùy theo nhà sản xuất và nơi bán. Người dùng nên giữ lại hóa đơn và hướng dẫn sử dụng để thuận tiện cho việc bảo hành. Khi cần bảo hành, nên liên hệ với trung tâm bảo hành chính hãng hoặc đại lý ủy quyền để được hỗ trợ tốt nhất.</p>
+<p><strong>Bảo Quản:</strong> Để kéo dài tuổi thọ của nội thất, người dùng nên:</p>
+<ul>
+    <li>Tránh để nội thất tiếp xúc trực tiếp với nước hoặc môi trường ẩm ướt.</li>
+    <li>Sử dụng khăn mềm và dung dịch chuyên dụng để lau chùi sản phẩm, tránh sử dụng hóa chất mạnh.</li>
+    <li>Không để nội thất chịu lực nặng quá mức hoặc va đập mạnh.</li>
+    <li>Tránh để nội thất ở nơi có nhiệt độ cao hoặc trực tiếp dưới ánh nắng mặt trời.</li>
+</ul>
+<p>Bằng cách sử dụng đúng cách và bảo quản cẩn thận, nội thất sẽ luôn giữ được vẻ đẹp và chức năng, mang lại trải nghiệm tốt nhất cho người dùng.</p>
+</div>
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">watch</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>
+</body>
+</html>
