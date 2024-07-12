@@ -208,6 +208,8 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  width: 330px;
+  height: 300px;
 }
 
 svg:not(:root) {
@@ -478,8 +480,8 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  width: 330px;
+  height: 300px;
 }
 
 .img-thumbnail {
@@ -1331,8 +1333,8 @@ pre code {
   .col-lg-9 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 75%;
-    flex: 0 0 75%;
-    max-width: 75%;
+    flex: 0 0 100%;
+    max-width: 99%;
   }
   .col-lg-10 {
     -webkit-box-flex: 0;
@@ -5391,7 +5393,6 @@ button.close {
   padding: 0;
   background-color: transparent;
   border: 0;
-  -webkit-appearance: none;
 }
 
 .modal-open {
@@ -8263,7 +8264,6 @@ button.bg-dark:focus {
   .my-lg-2 {
     margin-top: 0.5rem !important;
   }
-  .mr-lg-2,
   .mx-lg-2 {
     margin-right: 0.5rem !important;
   }
