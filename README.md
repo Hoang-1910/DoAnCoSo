@@ -1,8 +1,13 @@
-## SuperShop - Single Vendor Ecommerce Application
+## Thành viên nhóm
+1. Nguyễn Bảo Hoàng
+2. Phạm Văn Hoàn
+3. Nguyễn Ngọc Miền
 
+## Đề tài 
+- Xây dựng website bán đồ nội thất
 
+- 
 ### FrontEnd Application Folder Structure
-
 ```
 ├───app
 │   ├───Http
@@ -33,7 +38,6 @@ admin password: abc123
 
 
 ### Features:
-
 - Home Page
 - Category
 - Category Lists
