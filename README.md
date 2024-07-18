@@ -5,8 +5,7 @@
 
 ## Đề tài 
 - Xây dựng website bán đồ nội thất
-
-- 
+ 
 ### FrontEnd Application Folder Structure
 ```
 ├───app
